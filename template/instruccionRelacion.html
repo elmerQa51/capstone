@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleInstrucciones.css">
+    <title>Misión 2: Los Murales de Venn</title>
+</head>
+<body>
+    <div class="background-overlay" style="background-image: url('../img/conjuntos-bg.jpg');"></div>
+
+    <div class="instructions-container">
+        <div class="parchment">
+            <header class="parchment-header">
+                <span class="chapter-number">Capítulo II</span>
+                <h2 id="mission-title">Los Murales de Venn</h2>
+            </header>
+            
+            <div class="parchment-content">
+                <p>¡Increíble trabajo en el Oráculo, <strong id="player-display">Explorador</strong>!</p>
+                <p>Has entrado a la <strong>Cámara de las Agrupaciones</strong>. Aquí, los antiguos grabaron sus secretos en círculos sagrados que se entrelazan.</p>
+                
+                <ul class="steps">
+                    <li><span>1</span> Observa los murales iluminados (Diagramas de Venn).</li>
+                    <li><span>2</span> Identifica la operación lógica que describe la zona sombreada.</li>
+                    <li><span>3</span> Une cada fórmula con su mural correspondiente para abrir la cripta.</li>
+                </ul>
+
+                <p class="lore-text">
+                    "Lo que pertenece a uno, lo que pertenece al otro, y lo que ambos comparten... solo la unión hace la fuerza."
+                </p>
+            </div>
+
+            <button onclick="window.location.href='conjuntos.html'" class="btn-adventure">
+                Descifrar Murales
+            </button>
+        </div>
+    </div>
+
+    <script>
+        const name = localStorage.getItem('playerName') || "Explorador";
+        document.getElementById('player-display').innerText = name;
+    </script>
+</body>
+</html>

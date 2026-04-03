@@ -1,18 +1,59 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portafolio de Proyectos - Jala University</title>
+    <link rel="stylesheet" href="css/styleini.css"> <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Inter:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<body class="landing-page">
 
-<body>
+    <div class="container">
+        <header class="main-header">
+            <img src="img/logoJala.png" alt="Logo Jala University" class="jala-logo">
+            <h1>Panel de Proyectos Académicos</h1>
+            <p>Universitarios: <br>
+                <ul>
+                    <li>
+                        Steven García Sotomonte 
+                    </li>
+                    <li>
+                        Camila Vera Mamani Chino
+                    </li>
+                    <li>
+                        ELMER QUISPE MAMANI
+                    </li>
+                    <li>
+                        Suzel Brittany Villarroel Fernandez
+                    </li>
+                </ul>
+            </p>
+        </header>
 
+        <section class="projects">
+            <div class="project-card featured">
+                <div class="card-content">
+                    <h2>PROYECTO CAPSTONE</h2>
+                    <h3>Las Ruinas del Imperio Matemático</h3>
+                    <p>Matemática Discreta: Inducción, Conjuntos, Relaciones y Funciones</p>
+                    <button onclick="window.location.href='template/presentacion.html'" class="btn-primary">
+                        Iniciar Expedición
+                    </button>
+                </div>
+            </div>
 
-    <button onclick="window.location.href='template/presentacion.html'" id="start-button" class="btn">
-        Capstone
-    </button>
+            <div class="project-card locked">
+                <div class="card-content">
+                    <h2>PROYECTO 2</h2>
+                    <p>Próximamente: Estructura de Datos</p>
+                    <span class="status">Bloqueado</span>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script>
+        const name = localStorage.getItem('playerName') || "Elmer";
+        document.getElementById('player-name-display').innerText = name;
+    </script>
 </body>
-
 </html>

@@ -1,0 +1,12 @@
+[
+  {
+    "pregunta": "Para iniciar una demostración por inducción, ¿cuál es el primer paso obligatorio?",
+    "opciones": ["Probar para n = k + 1", "Establecer el Caso Base (n = 1)", "Asumir la tesis", "Calcular el límite"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Si n = k es nuestra Hipótesis de Inducción, ¿qué debemos demostrar a continuación?",
+    "opciones": ["Que funciona para n = 0", "Que funciona para n = k + 1", "Que n es un número primo", "Que la serie es infinita"],
+    "correcta": 1
+  }
+]
