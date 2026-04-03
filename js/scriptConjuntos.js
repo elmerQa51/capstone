@@ -6,7 +6,7 @@ const murales = [
     { img: '../img/conjuntos/Union.png', respuesta: 'A ∪ B' },
     { img: '../img/conjuntos/Interseccion.png', respuesta: 'A ∩ B' },
     { img: '../img/conjuntos/A-B.png', respuesta: 'A - B' },
-    { img: '../img/conjuntos/DiferenciaSimetrica.png', respuesta: 'A ⊕ B' }
+    { img: '../img/conjuntos/diferenciaSimetrica.png', respuesta: 'A ⊕ B' }
 ];
 
 
