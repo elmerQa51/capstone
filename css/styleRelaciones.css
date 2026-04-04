@@ -1,0 +1,27 @@
+.grid-3x3 {
+    display: grid;
+    grid-template-columns: repeat(3, 100px); /* 3 columnas de 100px */
+    grid-gap: 10px;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.piedra-matriz {
+    width: 100px;
+    height: 100px;
+    background-color: #3d2e1e;
+    border: 2px solid #d4a017;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    cursor: pointer;
+    color: #e8d5a3;
+    transition: 0.3s;
+}
+
+.piedra-matriz.activada {
+    background-color: #d4a017;
+    color: #1a0f00;
+    box-shadow: 0 0 15px #ffd700;
+}

@@ -1,0 +1,12 @@
+[
+  {
+    "titulo": "Relación de Identidad (a = b)",
+    "instruccion": "Activa solo las piedras donde la fila sea igual a la columna.",
+    "patronCorrecto": [1, 0, 0, 0, 1, 0, 0, 0, 1]
+  },
+  {
+    "titulo": "Relación Menor que (a < b)",
+    "instruccion": "Activa las piedras donde el número de fila sea menor al de la columna.",
+    "patronCorrecto": [0, 1, 1, 0, 0, 1, 0, 0, 0]
+  }
+]
