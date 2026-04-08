@@ -1,0 +1,88 @@
+/* --- ESTO ES LO QUE FALTABA PARA EL EFECTO PISO --- */
+body {
+
+    margin: 0;
+    height: 100vh;
+    
+    background-image: url('../img/relaciones1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+}
+#game-container {
+    perspective: 1000px; /* Cámara 3D */
+    text-align: center;
+    padding-top: 50px;
+    overflow: hidden;
+}
+
+.grid-3x3 {
+    margin-top: 8vh;
+    display: grid;
+    grid-template-columns: repeat(3, 110px); /* 3 columnas */
+    grid-gap: 15px;
+    justify-content: center;
+    /*margin: 40px auto;*/
+    
+    /* LA MAGIA DEL PISO ESTÁ AQUÍ */
+    transform: rotateX(60deg) rotateZ(0deg); 
+    transform-style: preserve-3d;
+    position: relative;
+}
+
+/* --- ESTILOS DE LAS PIEDRAS (Lo que ya tenías) --- */
+
+.piedra-matriz {
+    width: 110px;
+    height: 110px;
+    background-color: #3d2e1e;
+    border: 3px solid #8b6914;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: #e8d5a3;
+    cursor: crosshair;
+    box-shadow: 0 10px 0 #1a0f00; /* Grosor de la piedra */
+    transition: all 0.2s;
+    user-select: none; /* Para que no se seleccione el texto al dar clic rápido */
+}
+
+.piedra-matriz:hover{
+    background-color: #8b6914;
+    transform: translateY(6px); 
+}
+
+.piedra-matriz.activada {
+    background-color: #d4a017;
+    color: #1a0f00;
+    /* Al activarse, la piedra baja (se hunde) */
+    box-shadow: 0 4px 0 #8b6914, 0 0 20px #ffd700;
+    transform: translateY(6px); 
+}
+
+/* Sombra en el suelo */
+.grid-3x3::after {
+    content: "";
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.4);
+    filter: blur(25px);
+    z-index: -1;
+    transform: translateZ(-15px);
+}
+
+/* Botón de verificar (para que no esté inclinado) */
+.btn-adventure {
+    margin-top: 50px;
+    padding: 15px 30px;
+    background-color: #d4a017;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    cursor: pointer;
+}
