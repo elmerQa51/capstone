@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Cinzel:wght@400;700&family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleRelaciones.css">
+    <title>Relaciones</title>
+</head>
+<body>
+    <div id="game-container">
+        <h3 id="progress">Matrices resueltas: 0/3</h3>
+        <h2 id="titulo-mision">Cargando...</h2>
+        
+        <button onclick="verificarMatriz()" class="btn-adventure">Activar Mecanismo</button>
+        <div id="matriz-grid" class="grid-4x4"></div>
+        <div id="message"></div>
+    </div>
+
+    <button id="btn-ayuda" class="btn-floating">?</button>
+
+    <div id="modal-info" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">Ayuda:</span>
+            <h2 id="modal-titulo">Vínculo de las Costumbres</h2>
+            <p id="modal-ayuda-texto"></p>
+            <br>
+            <div class="tabla-info" id="modal-tabla">
+                <!-- se llena dinámicamente -->
+            </div>
+            <p id="modal-pie"></p>
+        </div>
+    </div>
+
+    <script src="../js/scriptRelaciones.js"></script>
+</body>
+</html>

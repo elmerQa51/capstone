@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleInstrucciones.css">
+    <title>Misión 1: Instrucciones</title>
+</head>
+<body>
+    <div class="background-overlay">
+
+        <div class="instructions-container">
+            <div class="parchment">
+                <header class="parchment-header">
+                    <span class="chapter-number">Capítulo I</span>
+                    <h2 id="mission-title">El Oráculo de Inducción</h2>
+                </header>
+
+                <div class="parchment-content">
+                    <p>Escucha con atención, <strong id="player-display">Explorador</strong>...</p>
+                    <p>Has llegado ante la <strong>Gran Puerta</strong>, custodiada por el antiguo Oráculo. Para acceder
+                        a las ruinas y recuperar el conocimiento matemático perdido, debes demostrar tu dominio sobre la
+                        técnica de demostración más poderosa:</p>
+
+                    <ul class="steps">
+                        <li><span>1</span> Resuelve los <strong>acertijos lógicos</strong> iniciales.</li>
+                        <li><span>2</span> Establece y verifica el <strong>Caso Base</strong> (n=1).</li>
+                        <li><span>3</span> Aplica la <strong>Hipótesis y el Paso Inductivo</strong> (n=k+1) para abrir
+                            el portón.</li>
+                    </ul>
+
+                    <p class="lore-text">
+                        Si tus cálculos son correctos, el mecanismo se activará. ¡No permitas que este conocimiento
+                        caiga en el olvido!
+                    </p>
+                </div>
+
+                <button onclick="window.location.href='induccion.html'" class="btn-adventure">
+                    ¡Entrar al Templo!
+                </button>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        const name = localStorage.getItem('playerName') || "Explorador";
+        document.getElementById('player-display').innerText = name;
+    </script>
+</body>
+
+</html>

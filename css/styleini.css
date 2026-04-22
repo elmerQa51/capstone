@@ -1,0 +1,157 @@
+
+:root {
+    --primary-blue: #00d2ff;
+    --dark-bg: #0a0a0c;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --glass-border: rgba(255, 255, 255, 0.1);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.landing-page {
+    background: radial-gradient(circle at center, #1a1a2e 0%, #0a0a0c 100%);
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1000px;
+}
+
+.main-header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.jala-logo {
+    width: 300px; 
+    height: auto;
+    margin-bottom: 20px;
+    filter: drop-shadow(0 0 15px rgba(38, 187, 241, 0.362));
+}
+
+.main-header h1 {
+    font-family: 'Cinzel', serif;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+}
+
+.main-header p {
+    font-weight: 700;
+    color: var(--primary-blue);
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+ul li {
+    font-size: 0.9rem;
+    color: #cccccc;
+    border-left: 2px solid var(--primary-blue);
+    padding-left: 10px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    perspective: 1000px;
+}
+
+.card-content {
+    background: var(--card-bg);
+    border: 1px solid var(--glass-border);
+    backdrop-filter: blur(10px); 
+    border-radius: 20px;
+    padding: 30px;
+    width: 320px;
+    height: 350px; 
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    transition: transform 0.4s ease, border-color 0.4s ease;
+}
+
+.featured .card-content {
+    border-color: rgba(0, 210, 255, 0.4);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.project-card:hover .card-content {
+    transform: translateY(-10px);
+    border-color: var(--primary-blue);
+}
+
+.card-content h2 {
+    font-size: 0.8rem;
+    letter-spacing: 4px;
+    color: var(--primary-blue);
+    margin-bottom: 15px;
+}
+
+.card-content h3 {
+    font-family: 'Cinzel', serif;
+    font-size: 1.4rem;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.btn-primary {
+    background: transparent;
+    border: 2px solid var(--primary-blue);
+    color: var(--primary-blue);
+    padding: 12px 25px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background: var(--primary-blue);
+    color: #000;
+    box-shadow: 0 0 20px rgba(0, 210, 255, 0.6);
+}
+
+.locked {
+    opacity: 0.6;
+    filter: grayscale(1);
+}
+
+.status {
+    margin-top: 20px;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    background: #333;
+    padding: 5px 15px;
+    border-radius: 20px;
+}

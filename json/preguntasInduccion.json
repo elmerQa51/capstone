@@ -1,0 +1,52 @@
+[
+  {
+    "pregunta": "En el ejercicio de inducción para la fórmula:<br> ∑ i³ = [n(n+1)/2]², ¿cuál es la expresión correcta que se obtiene para el CASO BASE cuando n = 1?",
+    "opciones": [
+      "1³ = [1(2)/2]² → 1 = 1",
+      "1³ = [1(1+1)]² → 1 = 4",
+      "1³ + 2³ = [1(2)/2]² → 1 = 1",
+      "∑ i³ = [1(1+1)/2] → 1 = 1"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "En el PASO INDUCTIVO del ejercicio (n = k+1), ¿qué expresión se utiliza para reemplazar la suma de 1³ + 2³ + ... + k³?",
+    "opciones": [
+      "[k(k+1)/2]",
+      "[k(k+1)/2]³",
+      "[k(k+1)/2]²",
+      "(k+1)³"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "En el ejercicio: 1 + 3 + ... + (2n-1) = n², ¿Qué se debe hacer en la hipótesis de inducción?",
+    "opciones": [
+      "Para n = 1, (2(1) - 1) = 1²",
+      "Demostrar que: 1 + 3 + ... + (2k –1) + (2(k+1) - 1) = (k+1)²",
+      "Asumir que la fórmula es verdadera para n = k, es decir 1 + 3 + ... + (2k –1) = k²",
+      "Para n = 2, (2(2) - 1) = 2²"
+    ],
+    "correcta": 2
+  },
+  {
+    "pregunta": "En el ejercicio: ∑ 2^i = 2^(n+1) - 1, ¿Qué se debe hacer en el paso inductivo?",
+    "opciones": [
+      "Demostrar que: 1 + 2 + ... + 2^k + 2^(k+1) = 2^(k+2) - 1",
+      "Para n = 2, 2^0 + 2^1 + 2^2 = 2^(2+1) - 1",
+      "Asumir que la fórmula es verdadera para n = k, es decir 2^0 + 2^1 + ... + 2^k = 2^(k+1) - 1",
+      "Demostrar que: 2^0 + 2^1 + ... + 2^(k+1) - 1"
+    ],
+    "correcta": 0
+  },
+  {
+    "pregunta": "Para iniciar una demostración por inducción, ¿cuál es el primer paso obligatorio?",
+    "opciones": ["Probar para n = k + 1", "Establecer el Caso Base (n = 1)", "Asumir la tesis", "Calcular el límite"],
+    "correcta": 1
+  },
+  {
+    "pregunta": "Si n = k es nuestra Hipótesis de Inducción, ¿qué debemos demostrar a continuación?",
+    "opciones": ["Que funciona para n = 0", "Que funciona para n = k + 1", "Que n es un número primo", "Que la serie es infinita"],
+    "correcta": 1
+  }
+]

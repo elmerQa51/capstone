@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=IM+Fell+English&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/styleFinal.css">
+    <title>¡Victoria Ancestral!</title>
+</head>
+<body>
+    <div class="content-container">
+        <div class="parchment" id="mensaje-victoria">
+            <h1>¡Felicidades, <span id="player-name">Explorador</span>!</h1>
+            <p>Has descifrado los secretos de las ruinas y restaurado el equilibrio ancestral.</p>
+            <p>El verdadero tesoro no era el oro, sino la sabiduría que ahora posees.</p>
+        </div>
+
+        <button onclick="window.location.href='../index.html'" class="btn-adventure">
+            Reiniciar la Aventura
+        </button>
+    </div>
+
+    <script>
+        // Nombre del jugador
+        const name = localStorage.getItem('playerName') || "Explorador";
+        document.getElementById('player-name').innerText = name;
+
+        
+        setTimeout(() => {
+            const mensaje = document.getElementById('mensaje-victoria');
+            mensaje.style.transition = "opacity 2s"; 
+            mensaje.style.opacity = "0";
+            
+            
+            setTimeout(() => {
+                mensaje.style.display = 'none';
+            }, 2000); 
+        }, 20000); 
+    </script>
+</body>
+</html>

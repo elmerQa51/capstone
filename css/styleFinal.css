@@ -1,0 +1,79 @@
+:root {
+    --gold: #d4a017;
+    --sand: #f5e6c8;
+    --stone: #3d2e1e;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url('../img/final2.png'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'IM Fell English', serif;
+}
+
+.content-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+}
+
+.parchment {
+    background: rgba(14, 8, 6, 0.75);
+    backdrop-filter: blur(8px);
+    border: 3px solid var(--gold);
+    border-radius: 15px;
+    padding: 40px;
+    color: var(--sand);
+    box-shadow: 0 0 30px rgba(0,0,0,0.8);
+}
+
+h1 {
+    font-family: 'Cinzel', serif;
+    color: var(--gold);
+    margin-bottom: 20px;
+    font-size: 2.5rem;
+}
+
+p {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+}
+
+
+.btn-adventure:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+}
+
+.content-container {
+    text-align: center;
+    width: 90%;
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.btn-adventure {
+
+    margin-top: 20px; 
+    padding: 15px 30px;
+    background-color: var(--gold);
+    color: black;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Cinzel', serif;
+    font-weight: bold;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: 0.3s;
+}

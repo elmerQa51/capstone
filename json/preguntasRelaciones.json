@@ -1,0 +1,75 @@
+[
+  {
+    "titulo": "El Vínculo de las Costumbres",
+    "instruccion": "A pesar de vivir en mundos distintos, Litha y Aethel descubrieron que compartían las mismas tradiciones. Activa las baldosas donde ambos pueblos celebran exactamente la misma costumbre.",
+    "ayuda": "Busca los pares donde la costumbre de Litha (fila) sea idéntica a la de Aethel (columna). Solo existen 4 vínculos verdaderos: forman una línea diagonal de esquina a esquina.",
+    "puebloFila": "Litha",
+    "puebloColumna": "Aethel",
+    "costumbres": ["Ofrenda de Caza", "Ofrenda de Cultivo", "Rito del Fuego", "Rito del Agua"],
+    "patronCorrecto": [ 1, 0, 0, 0,
+                        0, 1, 0, 0,
+                        0, 0, 1, 0,
+                        0, 0, 0, 1]
+  },
+  {
+    "titulo": "Los Guardianes y sus Ritos",
+    "instruccion": "Los Litha guardaban el fuego sagrado. Los Aethel, el agua que da vida. Pero en ciertos ritos, un pueblo siempre rendía tributo antes que el otro. Activa las baldosas donde Litha rinde tributo ANTES que Aethel.",
+    "ayuda": "Las costumbres siguen este orden: Caza → Cultivo → Fuego → Agua. Activa la baldosa si la costumbre de la fila (Litha) aparece ANTES en ese orden que la de la columna (Aethel). Solo se activan los pares donde Litha va primero.",
+    "puebloFila": "Litha",
+    "puebloColumna": "Aethel",
+    "costumbres": ["Caza", "Cultivo", "Fuego", "Agua"],
+    "patronCorrecto": [ 0, 1, 1, 1,
+                        0, 0, 1, 1,
+                        0, 0, 0, 1,
+                        0, 0, 0, 0]
+  },
+  {
+    "titulo": "La Alianza del Último Rito",
+    "instruccion": "Cuando llegaba el invierno, Litha y Aethel se reunían solo si el rito de Aethel era igual o llegaba después del rito de Litha en el ciclo sagrado. Activa las baldosas que representan esos encuentros permitidos.",
+    "ayuda": "El ciclo sagrado es: Caza → Cultivo → Fuego → Agua. Activa la baldosa si la costumbre de la columna (Aethel) es igual O viene DESPUÉS que la de la fila (Litha). Incluye la diagonal y todo lo que está debajo de ella.",
+    "puebloFila": "Litha",
+    "puebloColumna": "Aethel",
+    "costumbres": ["Caza", "Cultivo", "Fuego", "Agua"],
+    "patronCorrecto": [ 1, 1, 1, 1,
+                        0, 1, 1, 1,
+                        0, 0, 1, 1,
+                        0, 0, 0, 1]
+  },
+  {
+    "titulo": "El Espejo de Kael y Soren",
+    "instruccion": "Los pueblos de Kael y Soren creían que dos guerreros eran 'reflejos' si ambos dominaban exactamente el mismo arte de combate. Activa las baldosas donde Kael y Soren comparten el mismo dominio.",
+    "ayuda": "Busca los pares donde el arte de Kael (fila) sea el mismo que el de Soren (columna). La relación de identidad forma siempre una diagonal perfecta: 4 baldosas, una por arte.",
+    "puebloFila": "Kael",
+    "puebloColumna": "Soren",
+    "costumbres": ["Arte de la Espada", "Arte del Arco", "Arte del Escudo", "Arte de la Magia"],
+    "patronCorrecto": [ 1, 0, 0, 0,
+                        0, 1, 0, 0,
+                        0, 0, 1, 0,
+                        0, 0, 0, 1]
+  },
+  {
+    "titulo": "La Jerarquía de los Astros",
+    "instruccion": "En la antigua orden de Kael, un guerrero solo podía desafiar a uno de Soren si su arte era de menor rango en la jerarquía sagrada. Activa las baldosas donde el arte de Kael tiene menor rango que el de Soren.",
+    "ayuda": "La jerarquía de menor a mayor es: Espada → Arco → Escudo → Magia. Activa la baldosa si el arte de la fila (Kael) tiene MENOR rango que el de la columna (Soren). No se incluye la diagonal.",
+    "puebloFila": "Kael",
+    "puebloColumna": "Soren",
+    "costumbres": ["Arte de la Espada", "Arte del Arco", "Arte del Escudo", "Arte de la Magia"],
+    "patronCorrecto": [ 0, 1, 1, 1,
+                        0, 0, 1, 1,
+                        0, 0, 0, 1,
+                        0, 0, 0, 0]
+  },
+  {
+    "titulo": "El Pacto de No Agresión",
+    "instruccion": "Kael y Soren firmaron un pacto: un guerrero de Kael nunca desafiaría a uno de Soren si su arte era de mayor rango. Solo se permiten los encuentros donde Kael tiene igual o menor rango que Soren. Activa esos pactos válidos.",
+    "ayuda": "La jerarquía es: Espada → Arco → Escudo → Magia. Activa la baldosa si el arte de Kael (fila) tiene IGUAL o MENOR rango que el de Soren (columna). Esto incluye la diagonal y todo lo que está por encima de ella.",
+    "puebloFila": "Kael",
+    "puebloColumna": "Soren",
+    "costumbres": ["Arte de la Espada", "Arte del Arco", "Arte del Escudo", "Arte de la Magia"],
+    "patronCorrecto": [ 1, 1, 1, 1,
+                        0, 1, 1, 1,
+                        0, 0, 1, 1,
+                        0, 0, 0, 1]
+  }
+]
+
